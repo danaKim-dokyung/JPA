@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<form action="/auth/loginProc" method="post">
+    <div>
+        <label>ID</label>
+        <input type="text" name="username" id="username">
+    </div>
+    <div>
+        <label>PW</label>
+        <input type="password" name="password" id="password">
+    </div>
+
+    <button>Sign in</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<div id="id">
+<span th:text="${qnaDetails.id}"></span></div>
+
+<span th:text="${qnaDetails.qnaContents}"></span></div>
+<span th:text="${qnaDetails.member.memberName}"></span></div>
+
+
+<button onclick="history.back()">돌아가기</button>
+<button id="btn-update">수정</button>
+<button id="btn-delete">삭제</button>
+
+<form>
+    <input type="hidden" id="qnaId" th:value="${qnaDetails.id}">
+<textarea id="responseContent"></textarea>
+</form>
+<button id="btn-response">등록</button>
+<script src="../js/qna.js"></script>
+</body>
+</html>
