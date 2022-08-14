@@ -3,16 +3,16 @@
 <월하합작 - 전국 8도 명주를 찾아서> 리팩토링 프로젝트입니다.
 
 
-### 1. 프로젝트 목적
+1. 프로젝트 목적
     - HTTP API 아키텍쳐 기반으로 개발
     - Spring MVC 활용한 월하합작 프로젝트에서 프론트단과 백단을 분리
     - Spring Data JPA 를 사용, 기존 MyBatis 환경을 배제함
     - AWS, Linux instance로 배포 진행
     
-### 2. 설계의 주안점
+2. 설계의 주안점
     - HTTP API 아키텍처 기반
     - 사용자 인증 방식은 JWT 기반의 Bearer 을 사용
-        - JWT 토큰을 발급 받은 뒤 Authorizion 헤더로 인증정보를 보냄
+     - JWT 토큰을 발급 받은 뒤 Authorizion 헤더로 인증정보를 보냄
     - JSON을 직렬화 포맷으로 사용
     - Spring Security 를 사용해 권한을 관리
     - Postman 을 활용한 API 테스트 진행
