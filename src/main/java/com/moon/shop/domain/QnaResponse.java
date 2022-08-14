@@ -40,4 +40,5 @@ public class QnaResponse {
     @Column(name="create_date")
     private Timestamp createDate;
 
+
 }
