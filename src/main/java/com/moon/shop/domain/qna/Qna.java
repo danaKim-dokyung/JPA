@@ -42,7 +42,7 @@ public class Qna {
     @JoinColumn(name="member_id")
     private Member member;
 
-    @OneToMany(mappedBy = "qna", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "qna", fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
     @JsonIgnoreProperties({"qna"})
     private List<QnaResponse> responseList;
 
