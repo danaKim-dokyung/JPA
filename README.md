@@ -43,7 +43,7 @@
 
 ---
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7cf8188e-bfa9-4521-a0f4-1c8553dd3eec/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/83184270/184529406-81a5c97a-db28-4516-ae07-bc5558c5cf30.png)
 
 [https://www.erdcloud.com/d/2NLWyySrcZmB4g5LG](https://www.erdcloud.com/d/2NLWyySrcZmB4g5LG)
 
