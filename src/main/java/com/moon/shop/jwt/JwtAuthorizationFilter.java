@@ -4,7 +4,7 @@ package com.moon.shop.jwt;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.moon.shop.config.auth.PrincipalDetail;
-import com.moon.shop.domain.member.Member;
+import com.moon.shop.domain.Member;
 import com.moon.shop.repository.MemberRepository;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

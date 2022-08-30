@@ -1,19 +1,14 @@
 package com.moon.shop.service;
 
-import com.moon.shop.config.auth.PrincipalDetail;
 import com.moon.shop.domain.QnaResponse;
-import com.moon.shop.domain.member.Member;
+import com.moon.shop.domain.Member;
 import com.moon.shop.repository.MemberRepository;
 import com.moon.shop.repository.QnaRepository;
-import com.moon.shop.domain.qna.Qna;
+import com.moon.shop.domain.Qna;
 import com.moon.shop.repository.QnaResponseRepository;
-import lombok.Data;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
@@ -73,6 +68,7 @@ public class QnaService {
         qnaResponseRepository.save(requestQnaResponse);
     }
 
+    @Transactional
     public void deleteResponse(int qnaResponseId){ //문의글 답변 삭제
         qnaRepository.deleteById(qnaResponseId);
     }

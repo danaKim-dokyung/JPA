@@ -1,8 +1,6 @@
 package com.moon.shop.domain;
 
 
-import com.moon.shop.domain.member.Member;
-import com.moon.shop.domain.qna.Qna;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

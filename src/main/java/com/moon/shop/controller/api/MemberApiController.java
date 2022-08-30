@@ -1,10 +1,9 @@
 package com.moon.shop.controller.api;
 
-import com.moon.shop.domain.member.Member;
+import com.moon.shop.domain.Member;
 import com.moon.shop.dto.ResponseDto;
 import com.moon.shop.service.MemberService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -33,7 +32,7 @@ public class MemberApiController {
         return memberService.memberDetail(id);
     }
 
-    @DeleteMapping("/api/user/member/{id}")
+    @DeleteMapping("/api/user/member/{id}") //회원 정보 수정
     public ResponseDto<Integer> delete(@PathVariable int id){
         return new ResponseDto<Integer>(HttpStatus.OK.value(), 1);
     }

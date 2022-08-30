@@ -3,23 +3,15 @@ package com.moon.shop.controller.api;
 
 import com.moon.shop.config.auth.PrincipalDetail;
 import com.moon.shop.domain.QnaResponse;
-import com.moon.shop.domain.member.Member;
-import com.moon.shop.domain.qna.Qna;
-import com.moon.shop.dto.DataReturnDto;
+import com.moon.shop.domain.Qna;
 import com.moon.shop.dto.ResponseDto;
-import com.moon.shop.service.MemberService;
 import com.moon.shop.service.QnaService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.sql.SQLOutput;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @RequiredArgsConstructor
 @RestController

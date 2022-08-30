@@ -1,9 +1,8 @@
-package com.moon.shop.domain.qna;
+package com.moon.shop.domain;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.moon.shop.domain.QnaResponse;
-import com.moon.shop.domain.member.Member;
+import com.moon.shop.domain.Member;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

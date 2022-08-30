@@ -1,4 +1,4 @@
-package com.moon.shop.domain.member;
+package com.moon.shop.domain;
 
 /*
 public enum RoleType {

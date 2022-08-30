@@ -1,4 +1,4 @@
-package com.moon.shop.domain.member;
+package com.moon.shop.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -41,6 +41,9 @@ public class Member {
 
     @CreationTimestamp
     private Timestamp createDate;
+
+    @OneToMany(mappedBy = "member")
+    private List<Order> orders = new ArrayList<>();
 
     /*
     //USER, ADMIN

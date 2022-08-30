@@ -1,7 +1,6 @@
 package com.moon.shop.config.auth;
 
-import com.moon.shop.domain.member.Member;
-import lombok.Data;
+import com.moon.shop.domain.Member;
 import lombok.Getter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
