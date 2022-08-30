@@ -4,14 +4,18 @@ package com.moon.shop.controller.api;
 import com.moon.shop.config.auth.PrincipalDetail;
 import com.moon.shop.domain.QnaResponse;
 import com.moon.shop.domain.Qna;
+
 import com.moon.shop.dto.ResponseDto;
 import com.moon.shop.service.QnaService;
 import lombok.RequiredArgsConstructor;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
 
 @RequiredArgsConstructor
 @RestController

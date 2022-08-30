@@ -3,6 +3,7 @@ package com.moon.shop.service;
 import com.moon.shop.domain.Member;
 import com.moon.shop.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
