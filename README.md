@@ -25,18 +25,18 @@
 
 
 
-1) Backend
+### 1) Backend
 
 - Spring Boot
 - Apache Tomcat
 - Spring Security
 - JWT
 
-2) Database
+### 2) Database
 
 - AWS RDS Database - MySQL 8.0.ver
 
-3) Server
+### 3) Server
 
 - AWS EC2 Linux instance
     - Ubuntu
