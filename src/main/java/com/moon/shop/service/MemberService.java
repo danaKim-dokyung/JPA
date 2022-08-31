@@ -3,6 +3,7 @@ package com.moon.shop.service;
 import com.moon.shop.domain.Member;
 import com.moon.shop.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -12,7 +13,6 @@ import org.springframework.transaction.annotation.Transactional;
 public class MemberService {
 
     private final MemberRepository memberRepository;
-
     private final BCryptPasswordEncoder encoder;
 
     @Transactional
@@ -26,11 +26,7 @@ public class MemberService {
 
     @Transactional
     public void memberUpdate(Member member){ //회원정보 수정
-        Member persistence = memberRepository.findByMemberUsername(member.getMemberUsername())
-                /*.orElseThrow(()->{
-                    System.out.println(member.getId());
-                    return new IllegalArgumentException("해당 회원을 찾을 수 없습니다");
-                })*/;
+        Member persistence = memberRepository.findByMemberUsername(member.getMemberUsername());
         String rawPassword = member.getPassword();
         String encPassword = encoder.encode(rawPassword);
         persistence.setPassword(encPassword);
