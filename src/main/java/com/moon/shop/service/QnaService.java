@@ -78,7 +78,7 @@ public class QnaService {
 
     //문의글 답변 삭제
     @Transactional
-    public void deleteResponse(int qnaResponseId){ //문의글 답변 삭제
+    public void deleteResponse(int qnaResponseId){ 
         qnaRepository.deleteById(qnaResponseId);
     }
 
