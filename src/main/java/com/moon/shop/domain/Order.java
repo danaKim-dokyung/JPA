@@ -24,7 +24,7 @@ public class Order {
     @JoinColumn(name="member_id")
     private Member member;
 
-    @OneToMany(mappedBy = "order",fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "order",fetch = FetchType.EAGER, cascade = CascadeType.ALL) // cascade 옵션으로 orderItem까지 함께 저장함
     private List<OrderItem> orderItems = new ArrayList<>();
 
     private LocalDateTime orderDate;

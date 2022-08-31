@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @RequiredArgsConstructor
 @Service
@@ -19,22 +20,7 @@ public class OrderService {
     private final MemberRepository memberRepository;
     private final ItemRepository itemRepository;
 
-
     //주문 생성
-    /*
-    @Transactional
-    public void createOrder(Order order, String member,OrderItem ... orderItems){
-        for(OrderItem orderItem : orderItems){
-            order.addOrderItem(orderItem);
-        }
-        Member memberId = new Member();
-        memberId = memberRepository.findByMemberUsername(member);
-        order.setMember(memberId);
-        order.setStatus(OrderStatus.ORDER);
-        order.setOrderDate(LocalDateTime.now());
-        orderRepository.save(order);
-    }*/
-
     @Transactional
     public void createOrder(String memberName, int itemId, int count){
         Member member = new Member();
@@ -46,22 +32,18 @@ public class OrderService {
                         });
 
         OrderItem orderItem = OrderItem.createOrderItem(item, item.getItemPrice(),count);
-
         Order order = Order.createOrder(member, orderItem);
-
         orderRepository.save(order);
     }
-
 
     //주문 취소
     @Transactional
     public void deleteOrder(int id){
-        orderRepository.deleteById(id);
+        Order order = orderRepository.findById(id).orElseThrow(()->{
+            return new IllegalArgumentException("해당 주문은 존재하지 않습니다.");
+        });
+        order.cancel();
     }
-
-
-
-    //주문 조회
 
 
 

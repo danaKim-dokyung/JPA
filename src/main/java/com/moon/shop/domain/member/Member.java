@@ -1,4 +1,4 @@
-package com.moon.shop.domain;
+package com.moon.shop.domain.member;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -21,6 +21,7 @@ import java.util.List;
 @Entity
 public class Member {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="member_id")
@@ -41,8 +42,11 @@ public class Member {
     @CreationTimestamp
     private Timestamp createDate;
 
-    @OneToMany(mappedBy = "member")
-    private List<Order> orders = new ArrayList<>();
+    /*
+    //USER, ADMIN
+    @Enumerated(EnumType.STRING)
+    private RoleType roles;
+     */
 
     private String roles; //USER, ADMIN
 
