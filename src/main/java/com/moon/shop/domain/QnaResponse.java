@@ -17,7 +17,6 @@ import java.sql.Timestamp;
 @Entity
 public class QnaResponse {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="qna_response_id")

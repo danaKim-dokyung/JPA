@@ -37,8 +37,6 @@ public class OrderItem {
         return orderItem;
     }
 
-
-
     //비즈니스 로직
     //주문 취소
     public void cancel() {

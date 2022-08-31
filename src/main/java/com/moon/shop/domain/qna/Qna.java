@@ -1,8 +1,9 @@
-package com.moon.shop.domain;
+package com.moon.shop.domain.qna;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.moon.shop.domain.QnaResponse;
-import com.moon.shop.domain.Member;
+import com.moon.shop.domain.member.Member;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -31,6 +32,9 @@ public class Qna {
     @Lob
     @Column(name="qna_contents")
     private String qnaContents;
+
+    //enum
+    //private String  qna_status;
 
     private int count;
 

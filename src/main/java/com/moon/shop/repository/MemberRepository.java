@@ -9,6 +9,4 @@ public interface MemberRepository extends JpaRepository<Member, Integer> {
 
     public Member findByMemberUsername(String memberUsername);
 
-
-
 }

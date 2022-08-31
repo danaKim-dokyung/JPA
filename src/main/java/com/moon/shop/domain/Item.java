@@ -17,7 +17,6 @@ import java.util.List;
 @NoArgsConstructor
 public class Item {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="item_id")
