@@ -53,7 +53,8 @@
 
 
 
-API 설계서 스프레드 시트 주소 첨부: https://docs.google.com/spreadsheets/d/1JAOrOBdIaOQAKzcUHvnzg49yyXDXxDuj-km8bZvDWzM/edit?usp=sharing
+API 설계서 스프레드 시트 주소 
+: https://docs.google.com/spreadsheets/d/1JAOrOBdIaOQAKzcUHvnzg49yyXDXxDuj-km8bZvDWzM/edit?usp=sharing
 
 설계
 
