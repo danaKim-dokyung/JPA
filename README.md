@@ -19,7 +19,7 @@
     - 기존 Mysql 환경에서 AWS RDS database로 전환
 
 
-# 1. 기술스택
+## 1. 기술스택  
 
 
 
@@ -40,7 +40,7 @@
     - Ubuntu
 
 
-# 2. ERD
+## 2. ERD  
 
 
 
@@ -49,7 +49,7 @@
 [https://www.erdcloud.com/d/2NLWyySrcZmB4g5LG](https://www.erdcloud.com/d/2NLWyySrcZmB4g5LG)
 
 
-# 3. API 설계서
+## 3. API 설계서  
 
 
 
@@ -62,7 +62,7 @@ API 설계서 스프레드 시트 주소 첨부:
 - JWT 기반의 Bearer 사용
 - 토큰을 발급 받은 뒤 Authorizion 헤더로 인증정보를 보냄
 
-# 4. Postman API Document
+## 4. Postman API Document  
 
 
 [https://documenter.getpostman.com/view/21589114/VUjSG49E](https://documenter.getpostman.com/view/21589114/VUjSG49E)
@@ -74,7 +74,7 @@ User 권한이 필요한 페이지 접근 방법
 - User 권한이 있는 사용자가 접근할 수 있는 페이지 API 실행 시 Authorization을 Key, 발급받은 토큰을 value 로 Header에 넣어 보냄
 
 
-# 5. 추가 정보
+## 5. 추가 정보  
 
 
 Refactoring 대상이 된 Spring MVC 프로젝트에 관한 추가적인 정보는 아래에서 확인해주세요 
