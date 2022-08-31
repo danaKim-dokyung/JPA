@@ -18,7 +18,7 @@
     - Postman 을 활용한 API 테스트 진행
     - 기존 Mysql 환경에서 AWS RDS database로 전환   
   
- <br/> <br/> 
+ <br/> 
 
 
 ## 1. 기술스택  
@@ -41,7 +41,7 @@
 - AWS EC2 Linux instance
     - Ubuntu
 
-
+<br/> 
 ## 2. ERD  
 
 
@@ -50,7 +50,7 @@
 
 [https://www.erdcloud.com/d/2NLWyySrcZmB4g5LG](https://www.erdcloud.com/d/2NLWyySrcZmB4g5LG)
 
-
+<br/> 
 ## 3. API 설계서  
 
 
@@ -65,6 +65,7 @@ API 설계서 스프레드 시트 주소
 - JWT 기반의 Bearer 사용
 - 토큰을 발급 받은 뒤 Authorizion 헤더로 인증정보를 보냄
 
+<br/> 
 ## 4. Postman API Document  
 
 
@@ -76,7 +77,7 @@ User 권한이 필요한 페이지 접근 방법
 - Login 성공 시 Header에 Authorization으로 인증정보 응답
 - User 권한이 있는 사용자가 접근할 수 있는 페이지 API 실행 시 Authorization을 Key, 발급받은 토큰을 value 로 Header에 넣어 보냄
 
-
+<br/> 
 ## 5. 추가 정보  
 
 
