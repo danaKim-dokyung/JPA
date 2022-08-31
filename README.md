@@ -16,7 +16,9 @@
     - JSON을 직렬화 포맷으로 사용
     - Spring Security 를 사용해 권한을 관리
     - Postman 을 활용한 API 테스트 진행
-    - 기존 Mysql 환경에서 AWS RDS database로 전환
+    - 기존 Mysql 환경에서 AWS RDS database로 전환   
+
+ 
 
 
 ## 1. 기술스택  
