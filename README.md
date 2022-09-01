@@ -89,7 +89,7 @@ User 권한이 필요한 페이지 접근 방법
 ## 5. 추가 정보  
 
 
-Refactoring 대상이 된 Spring MVC 프로젝트에 관한 추가적인 정보는 아래에서 확인해주세요 
+Refactoring 대상이 된 Spring MVC 프로젝트에 관한 추가적인 정보는 아래에서 확인해주세요! 
 
 - 월하합작 Spring MVC 프로젝트 
     https://github.com/danaKim-dokyung/Under_the_Moon
